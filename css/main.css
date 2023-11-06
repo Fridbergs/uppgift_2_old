@@ -3,3 +3,200 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
+
+/* MAIN ELEMENT */
+
+main {
+  margin: 1em 1em 2em;
+}
+
+body {
+  background-color: rgb(96, 113, 150);
+}
+
+footer {
+  background-color: rgb(213, 215, 222);
+  height: 8rem;
+}
+
+header {
+  background-color: rgb(186, 191, 209);
+  width: 100%;
+  height: 10vh;
+}
+
+IMG {
+  height: 250px;
+  width: auto;
+}
+
+/* MAIN ELEMENT CSS */
+
+main {
+  margin: 1em 1em 2em;
+}
+
+body {
+  background-color: rgb(96, 113, 150);
+}
+
+footer {
+  background-color: rgb(213, 215, 222);
+  height: 8rem;
+}
+
+header {
+  background-color: rgb(186, 191, 209);
+  width: 100%;
+  height: 10vh;
+}
+
+IMG {
+  height: 250px;
+  width: auto;
+}
+
+/* Main section CSS */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-transform: uppercase;
+  height: 50vh;
+  width: 100%;
+}
+
+.contact-details > h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-info-text {
+  padding-left: 5px;
+}
+.text-title {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: rgb(2, 1, 1);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-info a:hover {
+  text-decoration: none;
+  color: brown;
+}
+
+/* MAIN ELEMENT CSS */
+
+main {
+  margin: 1em 1em 2em;
+}
+
+body {
+  background-color: rgb(96, 113, 150);
+}
+
+footer {
+  background-color: rgb(213, 215, 222);
+  height: 8rem;
+}
+
+header {
+  background-color: rgb(186, 191, 209);
+  width: 100%;
+  height: 10vh;
+}
+
+/* Main section CSS */
+
+.about-container {
+  height: auto;
+  width: 100%;
+  border: 2px solid black;
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+}
+
+.div-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+
+.about-acticle-left {
+  width: 50%;
+  height: auto;
+  padding: 1.5em;
+}
+
+.about-acticle-right {
+  width: 50%;
+  height: auto;
+  padding: 1.5em;
+}
+
+/* MAIN ELEMENT */
+
+main {
+  margin: 1em 1em 2em;
+}
+
+body {
+  background-color: rgb(96, 113, 150);
+}
+
+footer {
+  background-color: rgb(213, 215, 222);
+  height: 8rem;
+}
+
+header {
+  background-color: rgb(186, 191, 209);
+  width: 100%;
+  height: 10vh;
+}
+
+/* MAIN ELEMENT */
+
+main {
+  margin: 1em 1em 2em;
+}
+
+body {
+  background-color: rgb(96, 113, 150);
+}
+
+footer {
+  background-color: rgb(213, 215, 222);
+  height: 8rem;
+}
+
+header {
+  background-color: rgb(186, 191, 209);
+  width: 100%;
+  height: 10vh;
+}
+
+IMG {
+  height: 250px;
+  width: auto;
+}
