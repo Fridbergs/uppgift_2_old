@@ -1,4 +1,4 @@
-/* PROFILE */
+/* HOME PAGE SPECIFIC CSS */
 .main-frame-profile {
   width: 100%;
   height: auto;
@@ -72,7 +72,7 @@
   background-color: rgb(72, 113, 150);
 }
 
-/* Project */
+/* Project part specific CSS */
 
 .main-frame-project {
   margin-top: 25px;

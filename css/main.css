@@ -200,3 +200,11 @@ IMG {
   height: 250px;
   width: auto;
 }
+
+/* Main section CSS Projects */
+
+.project-container {
+  height: 70vh;
+  width: 100%;
+  border: 2px solid black;
+}
