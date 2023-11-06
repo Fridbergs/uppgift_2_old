@@ -1,4 +1,10 @@
-/* Project Side Specific styling */
+/* PROJECTS Main section */
+
+.project-container {
+  height: 70vh;
+  width: 100%;
+  border: 2px solid black;
+}
 
 .main-frame-project {
   margin-top: 25px;
