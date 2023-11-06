@@ -1,3 +1,5 @@
+/* Main section CSS for all pages - below you see side specific mains */
+
 * {
   margin: 0;
   font-family: sans-serif;
@@ -14,49 +16,12 @@ body {
   background-color: rgb(96, 113, 150);
 }
 
-footer {
-  background-color: rgb(213, 215, 222);
-  height: 8rem;
-}
-
-header {
-  background-color: rgb(186, 191, 209);
-  width: 100%;
-  height: 10vh;
-}
-
 IMG {
   height: 250px;
   width: auto;
 }
 
-/* MAIN ELEMENT CSS */
-
-main {
-  margin: 1em 1em 2em;
-}
-
-body {
-  background-color: rgb(96, 113, 150);
-}
-
-footer {
-  background-color: rgb(213, 215, 222);
-  height: 8rem;
-}
-
-header {
-  background-color: rgb(186, 191, 209);
-  width: 100%;
-  height: 10vh;
-}
-
-IMG {
-  height: 250px;
-  width: auto;
-}
-
-/* Main section CSS */
+/* CONTACT Main section */
 .contact-details {
   display: flex;
   flex-direction: column;
@@ -104,28 +69,7 @@ IMG {
   color: brown;
 }
 
-/* MAIN ELEMENT CSS */
-
-main {
-  margin: 1em 1em 2em;
-}
-
-body {
-  background-color: rgb(96, 113, 150);
-}
-
-footer {
-  background-color: rgb(213, 215, 222);
-  height: 8rem;
-}
-
-header {
-  background-color: rgb(186, 191, 209);
-  width: 100%;
-  height: 10vh;
-}
-
-/* Main section CSS */
+/* ABOUT Main section */
 
 .about-container {
   height: auto;
@@ -152,53 +96,6 @@ header {
   width: 50%;
   height: auto;
   padding: 1.5em;
-}
-
-/* MAIN ELEMENT */
-
-main {
-  margin: 1em 1em 2em;
-}
-
-body {
-  background-color: rgb(96, 113, 150);
-}
-
-footer {
-  background-color: rgb(213, 215, 222);
-  height: 8rem;
-}
-
-header {
-  background-color: rgb(186, 191, 209);
-  width: 100%;
-  height: 10vh;
-}
-
-/* MAIN ELEMENT */
-
-main {
-  margin: 1em 1em 2em;
-}
-
-body {
-  background-color: rgb(96, 113, 150);
-}
-
-footer {
-  background-color: rgb(213, 215, 222);
-  height: 8rem;
-}
-
-header {
-  background-color: rgb(186, 191, 209);
-  width: 100%;
-  height: 10vh;
-}
-
-IMG {
-  height: 250px;
-  width: auto;
 }
 
 /* Main section CSS Projects */
