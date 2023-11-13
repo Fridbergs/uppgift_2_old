@@ -1,20 +1,22 @@
-async function getPersonalInfo() {
-  let response = await fetch("cv.json");
+// 1 . Anslut till JSON filen  - fetch synch await
+
+async function addCvInfo() {
+  const response = await fetch(cv.json);
 
   if (response.ok) {
-    const profileInfo = await response.json();
-    console.log(profileInfo);
+    const cvInfo = await response.json();
+
+    //Get the reference to the element inside the HTML document
+    const profileName = document.getElementById("profileName");
+
+    //Create the H3 element
+    //const profileNameInput = document.createElement("h3");
+
+    // Add the content to the H3 element
+    profileName.textContent = cvInfo.fullName;
   } else {
-    console.log("vi har inte fått kontakt");
+    console.log(`HTTP error message: ${response.status}`);
   }
 }
 
-getPersonalInfo();
-console.log(fullName);
-
-fetch("cv.json")
-  .then((response) => response.json())
-  .then((data) => {
-    // Process the retrieved JSON data here
-    console.log(cv);
-  });
+addCvInfo();
