@@ -1,4 +1,67 @@
 {
-  "name": "Linus Fridberg",
-  "profileText": "Jag heter Linus Fridberg, är 33 år gammal. Jag är uppvuxen i en liten ort som heter Tierp. Jag flyttade till Oslo 2010, flyttade till Malmö för att studera försäljning och marknadsföring 2013. Efter mina studier i Malmö flyttade jag till Barcelona för att studera företagsekonomi. I januari 2017 flyttade jag till Ulm, som ligger i Södra Tyskland. Augusti 2019 flyttade jag tillbaka till Malmö, och sedan 2020 driver jag eget företag, Fridberg Sales Consulting AB."
+  "Profile info": {
+    "name": "Linus Fridberg",
+    "profileText": "Jag heter Linus Fridberg, är 33 år gammal. Jag är uppvuxen i en liten ort som heter Tierp. Jag flyttade till Oslo 2010, flyttade till Malmö för att studera försäljning och marknadsföring 2013. Efter mina studier i Malmö flyttade jag till Barcelona för att studera företagsekonomi. I januari 2017 flyttade jag till Ulm, som ligger i Södra Tyskland. Augusti 2019 flyttade jag tillbaka till Malmö, och sedan 2020 driver jag eget företag, Fridberg Sales Consulting AB.",
+    "cvIntro": "An ambitious young business professional with an entrepreneurial flair, fueled by a thirst for technical knowledge and innovation."
+  },
+  "Work Experience": {
+    "company1": "Partnerships Manager - Urban Future",
+    "company2": "Country Manager - Diffo Solutions",
+    "company3": "Sales Manager Sweden - Noux Node",
+    "company4": "Business Development Manager - Precise Biometrics",
+    "company5": "IoT Implementation Specialist - Bobst Mex SA",
+    "company6": "Inside Sales Executive & Connected Services Specialist - Max ASP"
+  },
+  "Educational Background": {
+    "school1": "Sälj&Marknadshögskolan",
+    "school1-course1": "Projektmetodik",
+    "school1-course2": "Marknadsföring",
+    "school1-course3": "B2B Marketing",
+    "school1-course4": "Företagsekonomi",
+    "school1-course5": "Försäljning",
+    "school1-course6": "Internationell försäljning",
+    "school1-course7": "Internationell affärsjuridik",
+    "school1-course8": "Retorik",
+    "school1-course9": "Digital Media/IT",
+    "school1-course10": "Affärsengelska",
+    "school1-course11": "LIA",
+    "school1-course12": "Examensarbete",
+    "school2": "Chas Academy",
+    "school2-course1": "IT Tech and Operations",
+    "school2-course2": "Webbutveckling och Webbteknik",
+    "school2-course3": "Projektmetodik och agila metoder",
+    "school2-course4": "Frontendutveckling och UX",
+    "school2-course5": "Backendutveckling och API:er",
+    "school2-course6": "React",
+    "school2-course7": "Hosting, CI/CD och arbetsmetodik",
+    "school2-course8": "TypeScript",
+    "school2-course9": "Vue.js",
+    "school2-course10": "LIA",
+    "school2-course11": "Examensarbete"
+  },
+  "skills": {
+    "skillsTitle": "Skills",
+    "skill1": "Business Development",
+    "skill2": "Account Management",
+    "skill3": "Relationship Management",
+    "skill4": "Prospecting",
+    "skill5": "Negotiation",
+    "skill6": "CRM",
+    "skill7": "Machine PLCs",
+    "skill8": "IoT",
+    "skill9": "Salesforce",
+    "skill10": "HubSpot",
+    "skill11": "Tableau",
+    "skill12": "SAP",
+    "skill13": "Trello",
+    "skill14": "Sustainability",
+    "skill15": "HTML",
+    "skill16": "CSS",
+    "skill17": "JavaScript"
+  },
+  "Highlights": {
+    "highlight1": "Founded Fridberg Sales Consulting",
+    "highlight2": "IoT Implementation Specialist for BOBST",
+    "highlight3": "Chas Academy Student"
+  }
 }

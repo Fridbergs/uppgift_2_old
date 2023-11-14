@@ -8,12 +8,14 @@ async function addCvInfo() {
     //Get the reference to the element inside the HTML document
     const profileName = document.getElementById("profileName");
     const profileSlogan = document.getElementById("profileSlogan");
-    //Create the H3 element
-    //const profileNameInput = document.createElement("h3");
+    const cvSlogan = document.getElementById("sloganTitle");
+    const skillsHeader = document.getElementById("skillsTitle");
 
-    // Add the content to the H3 element
-    profileName.textContent = cvInfo.name;
-    profileSlogan.textContent = cvInfo.profileText;
+    // Add the content to the HHTML page
+    profileName.textContent = cvInfo["Profile info"].name;
+    profileSlogan.textContent = cvInfo["Profile info"].profileText;
+    cvSlogan.textContent = cvInfo["Profile info"].cvIntro;
+    skillsHeader.textContent = cvInfo["skills"].skillsTitle;
   } else {
     console.log(`HTTP error message: ${response.status}`);
   }
