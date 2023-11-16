@@ -12,8 +12,12 @@ async function addCvInfo() {
     const skillsHeader = document.getElementById("skillsTitle");
 
     // Add the content to the HHTML page
+    //Home apge
     profileName.textContent = cvInfo["Profile info"].name;
     profileSlogan.textContent = cvInfo["Profile info"].profileText;
+
+    //CV Sidan
+    profileName.textContent = cvInfo["Profile info"].name;
     cvSlogan.textContent = cvInfo["Profile info"].cvIntro;
     skillsHeader.textContent = cvInfo["skills"].skillsTitle;
   } else {
