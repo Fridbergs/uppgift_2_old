@@ -3,6 +3,11 @@
 /* CONTACT Main section */
 .contact-details {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contactArticle {
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
@@ -12,7 +17,7 @@
   border-bottom: 2px solid black;
 }
 
-.contact-details > h2 {
+.contactArticle > h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,25 +53,29 @@
   text-decoration: none;
   color: brown;
 }
+
+.mapArticle {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 80%;
+}
+
 .mapDiv {
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-content: center;
-  width: 65%;
+  width: 100%;
   height: auto;
   margin-bottom: 3rem;
-}
-.map {
-  height: auto;
-  width: auto;
-  background-color: aqua;
 }
 
 .distanceDiv {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  justify-content: center;
+  width: auto;
   gap: 1.5em;
   padding: 2em;
 }
@@ -74,7 +83,7 @@
 .locationBtn {
   width: auto;
   height: 40px;
-  background-color: teal;
+  background-color: rgb(213, 215, 222);
   border: none;
   padding: 0px 15px 0px 15px;
   font-weight: 700;
@@ -84,6 +93,14 @@
 .inputAdress {
   height: 40px;
   width: 300px;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  background-color: aqua;
 }
 
 /* Always set the map height explicitly to define the size of the div
