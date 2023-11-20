@@ -7,8 +7,9 @@
   align-items: center;
   padding: 10px;
   text-transform: uppercase;
-  height: 50vh;
+  height: auto;
   width: 100%;
+  border-bottom: 2px solid black;
 }
 
 .contact-details > h2 {
@@ -46,4 +47,47 @@
 .contact-info a:hover {
   text-decoration: none;
   color: brown;
+}
+.mapDiv {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  width: 65%;
+  height: auto;
+  margin-bottom: 3rem;
+}
+.map {
+  height: auto;
+  width: auto;
+  background-color: aqua;
+}
+
+.distanceDiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1.5em;
+  padding: 2em;
+}
+
+.locationBtn {
+  width: auto;
+  height: 40px;
+  background-color: teal;
+  border: none;
+  padding: 0px 15px 0px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.inputAdress {
+  height: 40px;
+  width: 300px;
+}
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+gmp-map {
+  height: 100%;
 }
