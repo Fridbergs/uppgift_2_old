@@ -8,18 +8,11 @@ async function addCvInfo() {
     //Get the reference to the element inside the HTML document
     const profileName = document.getElementById("profileName");
     const profileSlogan = document.getElementById("profileSlogan");
-    const cvSlogan = document.getElementById("sloganTitle");
-    const skillsHeader = document.getElementById("skillsTitle");
 
     // Add the content to the HHTML page
     //Home apge
     profileName.textContent = cvInfo["Profile info"].name;
     profileSlogan.textContent = cvInfo["Profile info"].profileText;
-
-    //CV Sidan
-    profileName.textContent = cvInfo["Profile info"].name;
-    cvSlogan.textContent = cvInfo["Profile info"].cvIntro;
-    skillsHeader.textContent = cvInfo["skills"].skillsTitle;
   } else {
     console.log(`HTTP error message: ${response.status}`);
   }
