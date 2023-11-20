@@ -1,10 +1,10 @@
 {
   "Profile info": {
     "name": "Linus Fridberg",
-    "profileText": "Jag heter Linus Fridberg, är 33 år gammal. Jag är uppvuxen i en liten ort som heter Tierp. Jag flyttade till Oslo 2010, flyttade till Malmö för att studera försäljning och marknadsföring 2013. Efter mina studier i Malmö flyttade jag till Barcelona för att studera företagsekonomi. I januari 2017 flyttade jag till Ulm, som ligger i Södra Tyskland. Augusti 2019 flyttade jag tillbaka till Malmö, och sedan 2020 driver jag eget företag, Fridberg Sales Consulting AB.",
     "cvIntro": "An ambitious young business professional with an entrepreneurial flair, fueled by a thirst for technical knowledge and innovation."
   },
-  "Work Experience": {
+  "workExperience": {
+    "workExperienceTitle": "Work Experience",
     "company1": "Partnerships Manager - Urban Future",
     "company2": "Country Manager - Diffo Solutions",
     "company3": "Sales Manager Sweden - Noux Node",
@@ -12,32 +12,33 @@
     "company5": "IoT Implementation Specialist - Bobst Mex SA",
     "company6": "Inside Sales Executive & Connected Services Specialist - Max ASP"
   },
-  "Educational Background": {
-    "school1": "Sälj&Marknadshögskolan",
-    "school1-course1": "Projektmetodik",
-    "school1-course2": "Marknadsföring",
-    "school1-course3": "B2B Marketing",
-    "school1-course4": "Företagsekonomi",
-    "school1-course5": "Försäljning",
-    "school1-course6": "Internationell försäljning",
-    "school1-course7": "Internationell affärsjuridik",
-    "school1-course8": "Retorik",
-    "school1-course9": "Digital Media/IT",
-    "school1-course10": "Affärsengelska",
-    "school1-course11": "LIA",
-    "school1-course12": "Examensarbete",
-    "school2": "Chas Academy",
-    "school2-course1": "IT Tech and Operations",
-    "school2-course2": "Webbutveckling och Webbteknik",
-    "school2-course3": "Projektmetodik och agila metoder",
-    "school2-course4": "Frontendutveckling och UX",
-    "school2-course5": "Backendutveckling och API:er",
-    "school2-course6": "React",
-    "school2-course7": "Hosting, CI/CD och arbetsmetodik",
-    "school2-course8": "TypeScript",
-    "school2-course9": "Vue.js",
-    "school2-course10": "LIA",
-    "school2-course11": "Examensarbete"
+  "educationalBackground": {
+    "educationalBackgroundTitle": "Educational Background",
+    "school1Title": "Sälj&Marknadshögskolan",
+    "school1Course1": "Projektmetodik",
+    "school1Course2": "Marknadsföring",
+    "school1Course3": "B2B Marketing",
+    "school1Course4": "Företagsekonomi",
+    "school1Course5": "Försäljning",
+    "school1Course6": "Internationell försäljning",
+    "school1Course7": "Internationell affärsjuridik",
+    "school1Course8": "Retorik",
+    "school1Course9": "Digital Media/IT",
+    "school1Course10": "Affärsengelska",
+    "school1Course11": "LIA",
+    "school1Course12": "Examensarbete",
+    "school2Title": "Chas Academy",
+    "school2Course1": "IT Tech and Operations",
+    "school2Course2": "Webbutveckling och Webbteknik",
+    "school2Course3": "Projektmetodik och agila metoder",
+    "school2Course4": "Frontendutveckling och UX",
+    "school2Course5": "Backendutveckling och API:er",
+    "school2Course6": "React",
+    "school2Course7": "Hosting, CI/CD och arbetsmetodik",
+    "school2Course8": "TypeScript",
+    "school2Course9": "Vue.js",
+    "school2Course10": "LIA",
+    "school2Course11": "Examensarbete"
   },
   "skills": {
     "skillsTitle": "Skills",
@@ -59,7 +60,8 @@
     "skill16": "CSS",
     "skill17": "JavaScript"
   },
-  "Highlights": {
+  "highlights": {
+    "highlightsTitle": "Highlights",
     "highlight1": "Founded Fridberg Sales Consulting",
     "highlight2": "IoT Implementation Specialist for BOBST",
     "highlight3": "Chas Academy Student"
