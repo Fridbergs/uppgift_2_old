@@ -1,89 +1,47 @@
-/**
- * @license
- * Copyright 2019 Google LLC. All Rights Reserved.
- * SPDX-License-Identifier: Apache-2.0
- */
+// Your Google Maps API key goes here
+const apiKey = "AIzaSyCePGmogmGkgiP1WbwMNNrQcYsXc2JIPPU";
+
+// Function to initialize the map
 function initMap() {
-  const bounds = new google.maps.LatLngBounds();
-  const markersArray = [];
+  // Initialize map centered at your preset location
+  const presetLocation = { lat: 37.7749, lng: -122.4194 };
   const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 55.53, lng: 9.4 },
-    zoom: 10,
+    zoom: 15,
+    center: presetLocation,
   });
-  // initialize services
+
+  // Add a marker for the preset location
+  new google.maps.Marker({
+    position: presetLocation,
+    map: map,
+    title: "Preset Location",
+  });
+}
+
+// Function to calculate distance
+function calculateDistance() {
+  const userLocationInput = document.getElementById("userLocation").value;
+
+  // Use Google Maps Geocoding API to convert user's location input to coordinates
   const geocoder = new google.maps.Geocoder();
-  const service = new google.maps.DistanceMatrixService();
-  // build request
-  const origin1 = { lat: 55.93, lng: -3.118 };
-  const origin2 = "Greenwich, England";
-  const destinationA = "Stockholm, Sweden";
-  const destinationB = { lat: 50.087, lng: 14.421 };
-  const request = {
-    origins: [origin1, origin2],
-    destinations: [destinationA, destinationB],
-    travelMode: google.maps.TravelMode.DRIVING,
-    unitSystem: google.maps.UnitSystem.METRIC,
-    avoidHighways: false,
-    avoidTolls: false,
-  };
+  geocoder.geocode({ address: userLocationInput }, function (results, status) {
+    if (status === "OK" && results[0]) {
+      const userLocation = results[0].geometry.location;
 
-  // put request on page
-  document.getElementById("request").innerText = JSON.stringify(
-    request,
-    null,
-    2
-  );
-  // get distance matrix response
-  service.getDistanceMatrix(request).then((response) => {
-    // put response
-    document.getElementById("response").innerText = JSON.stringify(
-      response,
-      null,
-      2
-    );
+      // Use Google Maps Geometry Library to calculate distance
+      const presetLocation = new google.maps.LatLng(37.7749, -122.4194);
+      const distance = google.maps.geometry.spherical.computeDistanceBetween(
+        userLocation,
+        presetLocation
+      );
 
-    // show on map
-    const originList = response.originAddresses;
-    const destinationList = response.destinationAddresses;
-
-    deleteMarkers(markersArray);
-
-    const showGeocodedAddressOnMap = (asDestination) => {
-      const handler = ({ results }) => {
-        map.fitBounds(bounds.extend(results[0].geometry.location));
-        markersArray.push(
-          new google.maps.Marker({
-            map,
-            position: results[0].geometry.location,
-            label: asDestination ? "D" : "O",
-          })
-        );
-      };
-      return handler;
-    };
-
-    for (let i = 0; i < originList.length; i++) {
-      const results = response.rows[i].elements;
-
-      geocoder
-        .geocode({ address: originList[i] })
-        .then(showGeocodedAddressOnMap(false));
-
-      for (let j = 0; j < results.length; j++) {
-        geocoder
-          .geocode({ address: destinationList[j] })
-          .then(showGeocodedAddressOnMap(true));
-      }
+      alert(
+        `Distance from your location to preset location: ${distance.toFixed(
+          2
+        )} meters`
+      );
+    } else {
+      alert("Geocoding failed. Please enter a valid location.");
     }
   });
 }
-
-function deleteMarkers(markersArray) {
-  for (let i = 0; i < markersArray.length; i++) {
-    markersArray[i].setMap(null);
-  }
-
-  markersArray = [];
-}
-
-window.initMap = initMap;

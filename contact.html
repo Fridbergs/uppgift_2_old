@@ -69,19 +69,39 @@
           <p id="phoneNumberTitle" class="text-title"></p> <p id="phoneNumber" class="contact-info-text"></p></p>
         </div>
       </article>
+
       <article class="mapArticle">
         <div class="mapDiv">    
-          <div class="distanceDiv">
-          <input class="inputAdress" type="text" placeholder="Where are you located?">
-          <button class="locationBtn">Calculate the distance from your location to My address </button></div>
-              <!-- Extern Kod -->
-            <div class="map" id="map" style="height: 400px;">    <gmp-map center="55.592529296875,12.97431755065918" zoom="14" map-id="DEMO_MAP_ID">
-              <gmp-advanced-marker position="55.592529296875,12.97431755065918" title="My location">
-              </gmp-advanced-marker>
-            </gmp-map> </div> 
+
+          
+          <!-- <div class="distanceDiv">
+          <input class="inputAdress" id="inputAdress" type="text" placeholder="Where are you located?">
+          
+   
+          
+          
+          
+          
+          <button class="locationBtn" type="button" > the distance from your location to My address </button></div>
+              Extern Kod -->
+
+            <!-- <div class="map" id="map" style="height: 400px;"> 
+         
+            </div>  -->
           </div>
       </article>
       </section>
+      <form id="locationForm">
+        <label for="userLocation">Your Location:</label>
+        <input type="text" id="userLocation" placeholder="Enter your location">
+        <button type="button" onclick="calculateDistance()">Calculate Distance</button>
+      </form>
+      <div id="map" style="height: 400px; width: 100%;"></div>
+
+
+
+
+
   </main>
   <!--  Footer -->
   <footer class="main-footer-frame">
@@ -101,5 +121,6 @@
     </section>
   </footer>
   <script src="contact.js"></script>
+  <script src="extern.js"></script>
   </body>
 </html>

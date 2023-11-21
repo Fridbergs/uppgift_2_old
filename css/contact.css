@@ -100,7 +100,7 @@
   flex-direction: column;
   height: auto;
   width: 100%;
-  background-color: aqua;
+  background-color: transparent;
 }
 
 /* Always set the map height explicitly to define the size of the div
