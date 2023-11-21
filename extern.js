@@ -1,11 +1,23 @@
-// Your Google Maps API key goes here
-const apiKey = "AIzaSyCePGmogmGkgiP1WbwMNNrQcYsXc2JIPPU";
+// Function to get API key from json
+async function getApiKey() {
+  const response = await fetch("variables.json");
+  if (response.ok) {
+    const contactInfo = await response.json();
+    //Get the json information
+    let googleApiKey = contactInfo["allApis"].googleApi;
+    initMap(googleApiKey);
+  } else {
+    console.log(`HTTP error message: ${response.status}`);
+  }
+}
+
+getApiKey();
 
 // Function to initialize the map
-function initMap() {
+function initMap(apiKey) {
   // Initialize map centered at your preset location
-  const presetLocation = { lat: 37.7749, lng: -122.4194 };
-  const map = new google.maps.Map(document.getElementById("map"), {
+  const presetLocation = { lat: 55.592529296875, lng: 12.97431755065918 };
+  const map = new google.maps.Map(document.getElementById("map2"), {
     zoom: 15,
     center: presetLocation,
   });
@@ -16,6 +28,7 @@ function initMap() {
     map: map,
     title: "Preset Location",
   });
+  console.log(apiKey);
 }
 
 // Function to calculate distance

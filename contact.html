@@ -71,23 +71,9 @@
       </article>
 
       <article class="mapArticle">
+
         <div class="mapDiv">    
 
-          
-          <!-- <div class="distanceDiv">
-          <input class="inputAdress" id="inputAdress" type="text" placeholder="Where are you located?">
-          
-   
-          
-          
-          
-          
-          <button class="locationBtn" type="button" > the distance from your location to My address </button></div>
-              Extern Kod -->
-
-            <!-- <div class="map" id="map" style="height: 400px;"> 
-         
-            </div>  -->
           </div>
       </article>
       </section>
@@ -96,7 +82,15 @@
         <input type="text" id="userLocation" placeholder="Enter your location">
         <button type="button" onclick="calculateDistance()">Calculate Distance</button>
       </form>
-      <div id="map" style="height: 400px; width: 100%;"></div>
+      <div id="map2" style="height: 400px; width: 100%;">  
+        <gmp-map center="55.592529296875,12.97431755065918" zoom="14" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="presetLocation" title="My location">
+        </gmp-advanced-marker>
+      </gmp-map> </div>
+
+    
+
+
 
 
 
